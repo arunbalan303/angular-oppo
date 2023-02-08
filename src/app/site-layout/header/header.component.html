@@ -1,0 +1,39 @@
+<nav>
+    <div  class="logo">
+      <a href=""><img id="m1" src="https://i.postimg.cc/g2v0GhpL/k1.png"></a>
+    </div>
+
+    <div class="search">
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <form class="search">
+        <div class="search__wrapper">
+          <input (keyup)="search($event)" [(ngModel)]="searchterm" id="e" type="text" name="e" placeholder="Search for..." class="search__field">
+          <button type="submit" class="fa fa-search search__icon"></button>
+        </div>
+      </form>
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <!-- <li><a href="#">Smartphones</a></li> -->
+      
+
+
+
+
+
+
+      
+      <li><a href="product">Store</a></li>
+      <li><a href="http://localhost:4200/product/add-product">Add new product</a></li>
+      <li><a href="http://localhost:4200/contact">Contact Us</a></li>&nbsp; &nbsp; &nbsp;
+      <!-- <li><a href="#">Accessories</a></li> &nbsp; &nbsp; -->
+     <a href=""> <i class="fa-solid fa-user fa-2xl"></i> </a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href=""><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+    </ul>
+   
+  </nav>
+ 
+

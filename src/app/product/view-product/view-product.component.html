@@ -1,0 +1,69 @@
+<div>
+  <div class="container my-5">
+
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-12">
+        <img id="img" class="img-fluid details-img" src="{{productdata.productImage}}" alt="">
+      </div>
+      <div class="col-md-6 col-sm-12 description-container">
+        <div class="main-description">
+          <p class="product-category mb-0"></p>
+          <h3>{{productdata.productName}}</h3>
+          <p class="product-price">₹{{productdata.price}}</p>
+
+          <h6 class="product-price">Product: {{productdata.isavailable}}</h6>
+
+          <p class="product-title mt-4 mb-1">About this product</p>
+          <p class="product-description mb-4">
+            {{productdata.description}}
+          </p>
+
+
+
+
+          
+          <button id="b1"><a id="a1"href="product/edit-product/{{productdata.id}}">Edit</a></button>&nbsp;
+
+
+          <button id="b2">
+
+
+            <a id="a1" href="product/delete-product/{{productdata.id}}">Delete</a>
+
+
+          </button> &nbsp;
+
+
+
+
+          <button id="b3">
+
+
+            <a id="a1" href="">Buy Now</a>
+
+          </button>
+          <div style="clear:both"></div>
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <!-- End row -->
+  </div>
+
+
+
+
+
+
+
+
+
+</div>

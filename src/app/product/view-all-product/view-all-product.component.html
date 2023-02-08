@@ -1,0 +1,151 @@
+
+<div id="add">
+    <!-- <button style="margin-left: 100px;">add new</button> -->
+
+
+
+    
+ 
+ <div id="bk">
+   
+    <p style="margin-left: 20px; font-size: 90px;">oppo</p>
+    <p style="margin-left: 1275px; font-size: 90px;margin-top: -137px;">store</p>
+    <br><br><br><br><br>
+    <ul  class="main-nav">
+        <li class="item1">
+            <div class="bg"></div>
+        </li>
+        <li class="item2">
+            <div class="bg"></div>
+        </li>
+        <li class="item3">
+            <div class="bg"></div>
+        </li>
+        <li class="item4">
+            <div class="bg"></div>
+        </li>
+        <li class="item5">
+            <div class="bg"></div>
+        </li>
+    </ul>
+</div>
+
+    <!-- </div> -->
+
+</div>
+
+
+
+
+
+
+
+
+    <div id="v3">
+        <div class="parent">
+
+            <div class="div1">
+                <a (click)="filter('')" id="a1"><img id="im1"
+                        src="https://i.postimg.cc/pV0rnXBh/H4-J36-Uc-K3-OUbar-G3.webp" class="rounded"
+                        alt="Cinque Terre">
+                    <p id="mo1">All Products</p>
+                </a>
+            </div>
+            <div class="div2">
+
+                <a (click)="filter(4)" id="a1"> <br>
+                    <img id="im2" src="https://i.postimg.cc/bwPrcRG1/QKA6lwigu-UAu-Ojl-D-1.webp" class="rounded"
+                        alt="Cinque Terre">
+                    <p id="mo6">Phones</p>
+                </a>
+
+            </div>
+            <div class="div3">
+                <a (click)="filter(2)" id="a1">
+                    <img id="im1" src="https://i.postimg.cc/pXxqmg47/P69qes-U724j-Ns-Zw-R.webp" class="rounded"
+                        alt="Cinque Terre">
+                    <p id="mo3">Audio</p>
+                </a>
+            </div>
+            <div class="div4">
+                <a (click)="filter(1)" id="a1">
+                    <img id="im1" src="https://i.postimg.cc/8kYhLx7w/NPt-Maj-FLey-XGy-Gy-Y.webp" class="rounded"
+                        alt="Cinque Terre">
+                    <p id="mo2">Tablets</p>
+                </a>
+
+
+
+
+
+            </div>
+            <div class="div5">
+
+                <a (click)="filter(3)" id="a1">
+                    <img id="im1" src="https://i.postimg.cc/nzG9gw2j/ba-Ss-Ar-Km-WXz-PNyqe.webp" class="rounded"
+                        alt="Cinque Terre">
+
+                    <p id="mo4">Accessory</p>
+                </a>
+
+
+
+            </div>
+            <div class="div6"> </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="kp">
+
+
+
+        <div class="container">
+
+
+
+
+            <div *ngFor="let i of filterproducts | filter:searchkey:'productName'" class="card-1 card-div">
+                <div class="like-icon-div">
+                    <label for="card-1-like" class="like-icon-div-child">
+                        <!-- <input type="checkbox" id="card-1-like">
+                <i class="far fa-heart heart-empty"></i>
+                <i class="fas fa-heart heart-fill"></i> -->
+                    </label>
+                </div>
+
+                <div class="gow-img-div img-div">
+                    <img src="{{i.productImage}}">
+                </div>
+                <div class="text-container">
+                    <h2 class="item-name">{{i.productName}}</h2>
+                    <p class="date"> {{i.short}} </p> <br>
+                    <div class="pricing-and-cart">
+                        <div class="pricing">
+                            <!-- <p class="previous-price">$27000</p> -->
+                            <p class="current-price">₹ {{i.price}}</p>
+                            <p id="p22"><a id="l" href="product/view-product/{{i.id}}">Buy Now</a></p>
+                            <hr style="color: black;">
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <img style="width: 100%;"src="https://i.postimg.cc/8z4GBHzR/PC-reno-find-series-entrance.jpg" alt="">
+
+
+        </div>
+       
+    </div>
+
+    
